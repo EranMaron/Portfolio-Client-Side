@@ -1,0 +1,77 @@
+/* Questions Section */
+
+:root {
+  --mainFont: "Oswald", sans-serif;
+  --slider-bcg: #78bbbb;
+  --about-bcg: #e6e1d0;
+  --position-bcg: #e3e0dd;
+}
+
+#questionsSection {
+  background: var(--slider-bcg);
+  width: 100%;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  padding-top: 3vw;
+}
+
+.progress {
+  position: fixed;
+  bottom: 5vh;
+  width: 50%;
+  height: 4vh;
+  left: 25%;
+  background: #999;
+  border: 2px solid #fff;
+}
+
+.nextbtn {
+  position: fixed;
+  bottom: 12vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2vw;
+  color: #fff;
+  width: 10%;
+  height: 2vw;
+  left: 45%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+}
+
+/* Question Page */
+.questionPage {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    to left top,
+    var(--position-bcg),
+    var(--slider-bcg)
+  );
+  text-align: center;
+}
+
+.questionPage h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 3vw;
+  padding: 5vw 0 0 0;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
+}
+
+.questionPage h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 2vw;
+  padding: 5vw 0 0 0;
+  color: #000;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 40vw;
+}

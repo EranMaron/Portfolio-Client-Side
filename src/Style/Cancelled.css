@@ -1,0 +1,9 @@
+.cancelled {
+  width: 100vw;
+  height: 100vh;
+  background-color: #06b6c1;
+  background-image: url("./images/we-love-you-so-please-dont-go.jpg");
+  background-size: 60%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}

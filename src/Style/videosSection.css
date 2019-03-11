@@ -1,0 +1,95 @@
+#videosSection {
+  font-family: "Oswald" !important;
+  background-color: #e68966;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0px auto;
+  text-align: center;
+  padding-top: 10vw;
+}
+
+.videos {
+  margin: 5vh auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.video {
+  background-color: #e3dfd7;
+  width: 330px;
+  height: 240px;
+}
+
+.video > img {
+  margin-top: 15px;
+  width: 300px;
+}
+
+.video-container {
+  margin-top: 20px;
+  color: #383a3c;
+  background-color: #fbfaf6;
+  cursor: pointer;
+  height: 390px;
+  width: 330px;
+}
+
+.songName {
+  font-size: 22px;
+  width: 330px;
+  margin: 15px auto;
+}
+
+.singer {
+  font-size: 15px;
+}
+
+.whiteCircle {
+  border-radius: 50%;
+  background-color: #fbfaf6;
+  margin-top: -25px;
+  margin-left: 145px;
+  width: 60px;
+  height: 50px;
+  background-image: url("images/sound.png");
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+}
+
+.dialogContainer {
+  margin: auto;
+  position: relative;
+  top: 15%;
+  width: 800px;
+  height: 500px;
+  background-color: #fbfaf6;
+  transform: translate(-50% -50%);
+  z-index: 999;
+  margin-top: 0vh;
+  margin-bottom: 10vh;
+  padding: 40px 20px 20px;
+  border-radius: 8px;
+}
+
+.dialogCloseButton {
+  color: #38353e;
+  font-size: 20px;
+  background-color: #fbfaf6;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  width: 50px;
+  height: 30px;
+  font-weight: bold;
+  align-self: center;
+}
+
+button:focus {
+  outline: 0;
+}

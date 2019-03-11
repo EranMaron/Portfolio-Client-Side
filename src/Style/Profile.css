@@ -1,0 +1,318 @@
+:root {
+  --mainFont: "Oswald", sans-serif;
+  --slider-bcg: #78bbbb;
+  --about-bcg: #e6e1d0;
+  --position-bcg: #e3e0dd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: content-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sectionSeperator {
+  border-top: solid 1px #ece9dc;
+  margin: 0;
+  padding: 0.5vw 0;
+  opacity: 0.4;
+}
+
+.App {
+  text-align: center;
+}
+
+#myHeader {
+  position: fixed;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 8vw;
+  background: var(--slider-bcg);
+  z-index: 1000;
+}
+
+.navbarItems {
+  padding-top: 2.5vw;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.userContainer {
+  position: absolute;
+  right: 1.5vw;
+  top: 2vw;
+  width: 8vw;
+  height: 5vw;
+  justify-content: center;
+  text-align: center;
+}
+
+#profileImg {
+  position: absolute;
+  right: 2.5vw;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+}
+
+.userName {
+  position: absolute;
+  width: 100%;
+  top: 3.8vw;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.8vw;
+}
+
+#logo {
+  font-size: 4vw;
+  padding: 0 2vw;
+  color: #f9ebd9;
+}
+
+.navItem {
+  display: inline-block;
+}
+
+.navItem a {
+  font-family: "Oswald", sans-serif;
+  font-size: 2.2vw;
+  color: #f9ebd9;
+  padding: 0 5vw;
+}
+
+.is-active {
+  border-bottom: solid 2px #fff;
+}
+
+/* Slider Section */
+#sliderSection {
+  background: var(--slider-bcg);
+  width: 100%;
+  height: auto;
+  min-height: calc(100vh - 8vw);
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding-top: 10vw;
+  text-align: center;
+}
+
+.sectionTitle {
+  padding: 0px;
+  font-size: 4vw;
+  text-shadow: 0.3vw 0.3vw 0.4vw #000;
+}
+
+.subtitle {
+  font-size: 1vw;
+  color: #4b4e4c;
+  height: 3vw;
+  background: url("./images/retroBckg.png") no-repeat center;
+  background-size: 30% auto;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 1%;
+}
+.subtitle p {
+  padding-top: 0.5%;
+}
+
+#sliderSection .sliderSummary {
+  color: #f7ebd8;
+  font-size: 1.2vw;
+}
+
+#carouselExampleControls {
+  margin: 0 auto;
+  width: 40vw;
+  box-sizing: border-box;
+}
+
+.d-block {
+  margin: 0 auto;
+}
+
+.sliderSummary {
+  margin: 2% 0;
+}
+
+/* ABOUT SECTION */
+
+#aboutSection {
+  font-family: "Oswald", sans-serif;
+  background: var(--about-bcg);
+  width: 100%;
+  min-height: calc(100vh - 8vw);
+  height: 100vh;
+  padding-top: 10vw;
+  text-align: center;
+}
+
+.separator {
+  border: none;
+  border-top: 2px solid #333;
+  width: 3vw;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  padding: 0;
+  display: inline-block;
+}
+
+.aboutContainer {
+  width: 90vw;
+  height: 50vh;
+  padding: 1.5vw;
+  margin: 0 auto;
+  padding-top: 4vw;
+  text-align: left;
+}
+
+.summaryContainer {
+  margin-top: 2vh;
+  width: 70%;
+  float: right;
+}
+
+/* Clear floats after containers */
+.aboutContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.aboutContainer h3 {
+  align-content: center;
+  font-size: 2vw;
+  color: #fff;
+  vertical-align: middle;
+  text-shadow: 1px 1px #000, -1px 1px #000, 1px -1px #000, -1px -1px #000;
+}
+
+.aboutContent {
+  margin: 0px auto;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.aboutContainer img {
+  width: 15vw;
+  height: 15vw;
+  float: left;
+  margin-right: 3.5vw;
+  margin-left: 7vw;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: 2px 2px 30px #000;
+}
+
+/* Increase the font-size of a span element */
+.aboutContainer p {
+  font-size: 1.2vw;
+  vertical-align: middle;
+}
+
+/* Position Section */
+#positionSection {
+  background: var(--position-bcg);
+  width: 100%;
+  height: 100vh;
+  min-height: calc(100vh - 8vw);
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding-top: 10vw;
+  text-align: center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 25vw;
+  height: 25vw;
+  margin: 2vw 5vw;
+  background: #e3dfd7;
+  border: 5px dotted #000;
+  border-radius: 8px;
+}
+
+.card-body {
+  color: #000;
+  background: transparent;
+}
+
+.card-img-top {
+  margin: 1.5vw auto;
+  width: 10vw;
+  height: 10vw;
+  border: 2px dotted #000;
+  border-radius: 100%;
+  text-align: center;
+}
+
+.connections {
+  font-size: 3vw;
+  font-weight: bold;
+  color: #000;
+  padding-top: 3vw;
+}
+
+/* Questions Section */
+
+#questionsSection {
+  background: var(--slider-bcg);
+  width: 100%;
+  height: 100vh;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  padding-top: 3vw;
+}
+
+.progress {
+  position: fixed;
+  bottom: 5vh;
+  width: 50%;
+  height: 4vh;
+  left: 25%;
+  background: #999;
+  border: 2px solid #fff;
+}
+
+.nextbtn {
+  position: fixed;
+  bottom: 12vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2vw;
+  color: #fff;
+  width: 10%;
+  height: 2vw;
+  left: 45%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.PortfolioLoaderContainer {
+  background-color: #78bbbb;
+}
